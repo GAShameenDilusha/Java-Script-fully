@@ -52,7 +52,7 @@ $("#student-submit").on('click', () => {
     students.push(student);
 
     loadTable();
-    $("#student-reset").click();
+    $("#student-reset").click();            /*data submit kala pasu text field clear weemata....*/
 });
 
 $("#student-update").on('click', () => {
