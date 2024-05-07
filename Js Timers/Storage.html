@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var name = "shameen";
+    localStorage.setItem("name", 1000);
+
+    let item = localStorage.setItem("name");
+    console.log("item: ", item);
+
+    localStorage.removeItem("name");
+
+
+
+    /*sessionStorage*/
+    sessionStorage.setItem("institute", "IJSE");
+
+    let sessionStorageItem = sessionStorage.getItem("institute");
+    console.log(sessionStorageItem);
+
+    sessionStorage.removeItem("institute");
+
+
+
+    Cookies.set("GDSE", "Internet Technologies",{expires: 7});
+    var val = cookies.get("GDSE");
+    console.log(val);
+
+
+</script>
+
+<script src = "https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+</body>
+</html>
